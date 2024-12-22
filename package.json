@@ -2,10 +2,12 @@
   "name": "@reactuse/root",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
     "dev": "turbo run dev",
+    "inspect": "npx @eslint/config-inspector",
     "dev:docs": "turbo run dev --filter=@reactuse/docs",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
@@ -42,13 +44,11 @@
     "jiti": "^2.4.1",
     "lint-staged": "^15.2.10",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.4.2",
-    "prettier-plugin-packagejson": "^2.5.6",
     "simple-git-hooks": "^2.11.1",
     "syncpack": "^13.0.0",
     "tsup": "^8.3.5",
     "turbo": "^2.3.3",
-    "typescript-eslint": "^8.18.0"
-  },
-  "packageManager": "pnpm@9.15.0"
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
+  }
 }
