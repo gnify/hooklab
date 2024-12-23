@@ -1,5 +1,5 @@
 {
-  "name": "@reactuse/tailwind-config",
+  "name": "@hooklab/tailwind-config",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@reactuse/typescript-config": "workspace:*",
+    "@hooklab/typescript-config": "workspace:*",
     "tailwindcss": "^3.4.16"
   }
 }
