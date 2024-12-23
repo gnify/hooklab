@@ -6,8 +6,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
 
-import { cn } from '@reactuse/design-system/lib/utils';
-import { Button } from '@reactuse/design-system/components/ui/button';
+import { cn } from '@hooklab/design-system/lib/utils';
+import { Button } from '@hooklab/design-system/components/ui/button';
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;

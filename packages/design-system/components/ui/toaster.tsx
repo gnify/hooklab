@@ -1,6 +1,6 @@
 'use client';
 
-import { useToast } from '@reactuse/design-system/hooks/use-toast';
+import { useToast } from '@hooklab/design-system/hooks/use-toast';
 import {
   Toast,
   ToastClose,
@@ -8,7 +8,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@reactuse/design-system/components/ui/toast';
+} from '@hooklab/design-system/components/ui/toast';
 
 export function Toaster() {
   const { toasts } = useToast();

@@ -3,7 +3,7 @@
 import { DragHandleDots2Icon } from '@radix-ui/react-icons';
 import * as ResizablePrimitive from 'react-resizable-panels';
 
-import { cn } from '@reactuse/design-system/lib/utils';
+import { cn } from '@hooklab/design-system/lib/utils';
 
 const ResizablePanelGroup = ({
   className,

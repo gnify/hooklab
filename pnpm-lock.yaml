@@ -8,16 +8,16 @@ importers:
 
   .:
     dependencies:
-      '@reactuse/commitlint-config':
+      '@hooklab/commitlint-config':
         specifier: workspace:*
         version: link:tooling/commitlint-config
-      '@reactuse/lintstaged-config':
+      '@hooklab/lintstaged-config':
         specifier: workspace:*
         version: link:tooling/lintstaged-config
-      '@reactuse/prettier-config':
+      '@hooklab/prettier-config':
         specifier: workspace:*
         version: link:tooling/prettier-config
-      '@reactuse/typescript-config':
+      '@hooklab/typescript-config':
         specifier: workspace:*
         version: link:tooling/tsconfig
       concurrently:
@@ -422,7 +422,7 @@ importers:
         specifier: ^3.24.0
         version: 3.24.0
     devDependencies:
-      '@reactuse/typescript-config':
+      '@hooklab/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/node':
@@ -479,7 +479,7 @@ importers:
         specifier: 14.4.0
         version: 14.4.0(@types/react-dom@19.0.2(@types/react@18.3.14))(@types/react@18.3.14)(algoliasearch@4.24.0)(next@15.0.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.16)
     devDependencies:
-      '@reactuse/typescript-config':
+      '@hooklab/typescript-config':
         specifier: workspace:*
         version: link:../tsconfig
       '@tailwindcss/typography':

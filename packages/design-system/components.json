@@ -10,10 +10,10 @@
     "cssVariables": true
   },
   "aliases": {
-    "components": "@reactuse/design-system/components",
-    "utils": "@reactuse/design-system/lib/utils",
-    "hooks": "@reactuse/design-system/hooks",
-    "lib": "@reactuse/design-system/lib",
-    "ui": "@reactuse/design-system/components/ui"
+    "components": "@hooklab/design-system/components",
+    "utils": "@hooklab/design-system/lib/utils",
+    "hooks": "@hooklab/design-system/hooks",
+    "lib": "@hooklab/design-system/lib",
+    "ui": "@hooklab/design-system/components/ui"
   }
 }

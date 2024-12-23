@@ -5,22 +5,22 @@ import { Slot } from '@radix-ui/react-slot';
 import { VariantProps, cva } from 'class-variance-authority';
 import { PanelLeft } from 'lucide-react';
 
-import { useIsMobile } from '@reactuse/design-system/hooks/use-mobile';
-import { cn } from '@reactuse/design-system/lib/utils';
-import { Button } from '@reactuse/design-system/components/ui/button';
-import { Input } from '@reactuse/design-system/components/ui/input';
-import { Separator } from '@reactuse/design-system/components/ui/separator';
+import { useIsMobile } from '@hooklab/design-system/hooks/use-mobile';
+import { cn } from '@hooklab/design-system/lib/utils';
+import { Button } from '@hooklab/design-system/components/ui/button';
+import { Input } from '@hooklab/design-system/components/ui/input';
+import { Separator } from '@hooklab/design-system/components/ui/separator';
 import {
   Sheet,
   SheetContent,
-} from '@reactuse/design-system/components/ui/sheet';
-import { Skeleton } from '@reactuse/design-system/components/ui/skeleton';
+} from '@hooklab/design-system/components/ui/sheet';
+import { Skeleton } from '@hooklab/design-system/components/ui/skeleton';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@reactuse/design-system/components/ui/tooltip';
+} from '@hooklab/design-system/components/ui/tooltip';
 
 const SIDEBAR_COOKIE_NAME = 'sidebar:state';
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;

@@ -1,13 +1,13 @@
 {
-  "name": "@reactuse/docs",
+  "name": "@hooklab/docs",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "postinstall": "fumadocs-mdx",
     "start": "next start"
   },
+  "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.1",

@@ -1,4 +1,4 @@
-### `@reactuse/prettier-config`
+### `@hooklab/prettier-config`
 
 Shared prettier config for ReactUse.
 

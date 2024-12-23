@@ -1,4 +1,4 @@
-### `@reactuse/commitlint-config`
+### `@hooklab/commitlint-config`
 
 Shared `lint-staged` configuration for ReactUse
 

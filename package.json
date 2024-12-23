@@ -1,5 +1,5 @@
 {
-  "name": "@reactuse/root",
+  "name": "@hooklab/root",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@9.15.0",
@@ -8,7 +8,7 @@
     "clean": "turbo run clean",
     "dev": "turbo run dev",
     "inspect": "npx @eslint/config-inspector",
-    "dev:docs": "turbo run dev --filter=@reactuse/docs",
+    "dev:docs": "turbo run dev --filter=@hooklab/docs",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
@@ -17,14 +17,14 @@
     "prepare": "husky",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=!@reactuse/docs && changeset publish"
+    "release": "turbo run build --filter=!@hooklab/docs && changeset publish"
   },
-  "prettier": "@reactuse/prettier-config",
+  "prettier": "@hooklab/prettier-config",
   "dependencies": {
-    "@reactuse/commitlint-config": "workspace:*",
-    "@reactuse/lintstaged-config": "workspace:*",
-    "@reactuse/prettier-config": "workspace:*",
-    "@reactuse/typescript-config": "workspace:*",
+    "@hooklab/commitlint-config": "workspace:*",
+    "@hooklab/lintstaged-config": "workspace:*",
+    "@hooklab/prettier-config": "workspace:*",
+    "@hooklab/typescript-config": "workspace:*",
     "concurrently": "^9.1.0"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { cn } from '@reactuse/design-system/lib/utils';
+import { cn } from '@hooklab/design-system/lib/utils';
 
 function Skeleton({
   className,

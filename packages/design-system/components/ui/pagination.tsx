@@ -5,11 +5,11 @@ import {
   DotsHorizontalIcon,
 } from '@radix-ui/react-icons';
 
-import { cn } from '@reactuse/design-system/lib/utils';
+import { cn } from '@hooklab/design-system/lib/utils';
 import {
   ButtonProps,
   buttonVariants,
-} from '@reactuse/design-system/components/ui/button';
+} from '@hooklab/design-system/components/ui/button';
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav

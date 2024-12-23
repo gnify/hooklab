@@ -1,4 +1,4 @@
-import baseConfig from "@reactuse/lintstaged-config";
+import baseConfig from "@hooklab/lintstaged-config";
 
 export default {
     ...baseConfig,

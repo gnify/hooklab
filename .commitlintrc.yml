@@ -1,2 +1,2 @@
 extends:
-  - '@reactuse/commitlint-config'
+  - '@hooklab/commitlint-config'
