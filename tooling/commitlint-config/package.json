@@ -5,9 +5,12 @@
   "description": "Shared Commitlint configuration for ReactUse",
   "author": {
     "name": "Gene",
-    "url": "https://github.com/changeelog"
+    "url": "https://github.com/idkgene"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idkgene/reactuse"
+  },
   "keywords": [
     "commitlint",
     "commitlintconfig",
