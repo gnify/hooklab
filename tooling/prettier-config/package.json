@@ -1,13 +1,15 @@
 {
-  "name": "@reactuse/prettier-config",
+  "name": "@hooklab/prettier-config",
   "version": "0.0.0",
-  "files": [
-    "index.js"
-  ],
+  "private": true,
   "description": "Shared Prettier configuration for ReactUse",
   "author": {
     "name": "Gene",
-    "url": "https://github.com/changeelog"
+    "url": "https://github.com/idkgene"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idkgene/reactuse"
   },
   "keywords": [
     "prettier",
@@ -15,8 +17,6 @@
     "react",
     "reactuse"
   ],
-  "license": "MIT",
-  "private": true,
   "peerDependencies": {
     "prettier": "^3.0.0",
     "prettier-plugin-packagejson": "^2.5.3"

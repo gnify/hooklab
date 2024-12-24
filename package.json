@@ -1,12 +1,14 @@
 {
-  "name": "@reactuse/root",
+  "name": "@hooklab/root",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
     "dev": "turbo run dev",
-    "dev:docs": "turbo run dev --filter=@reactuse/docs",
+    "inspect": "npx @eslint/config-inspector",
+    "dev:docs": "turbo run dev --filter=@hooklab/docs",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
@@ -15,40 +17,32 @@
     "prepare": "husky",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=!@reactuse/docs && changeset publish"
+    "release": "turbo run build --filter=!@hooklab/docs && changeset publish"
   },
-  "prettier": "@reactuse/prettier-config",
+  "prettier": "@hooklab/prettier-config",
   "dependencies": {
-    "@reactuse/prettier-config": "workspace:*",
-    "@reactuse/typescript-config": "workspace:*",
+    "@hooklab/commitlint-config": "workspace:*",
+    "@hooklab/lintstaged-config": "workspace:*",
+    "@hooklab/prettier-config": "workspace:*",
+    "@hooklab/typescript-config": "workspace:*",
     "concurrently": "^9.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
-    "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",
     "@changesets/cli": "^2.27.10",
-    "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
-    "@swc/cli": "0.4.1-nightly.20240914",
-    "@swc/core": "^1.10.1",
-    "@swc/helpers": "^0.5.15",
-    "@swc/types": "^0.1.17",
     "@types/node": "22.7.8",
     "cspell": "^8.16.1",
     "eslint": "^9.16.0",
     "globals": "^15.13.0",
     "husky": "^9.1.7",
     "jiti": "^2.4.1",
-    "lint-staged": "^15.2.10",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.4.2",
-    "prettier-plugin-packagejson": "^2.5.6",
     "simple-git-hooks": "^2.11.1",
     "syncpack": "^13.0.0",
     "tsup": "^8.3.5",
     "turbo": "^2.3.3",
-    "typescript-eslint": "^8.18.0"
-  },
-  "packageManager": "pnpm@9.15.0"
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
+  }
 }

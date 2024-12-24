@@ -1,5 +1,5 @@
 {
-  "name": "@reactuse/use-abs",
+  "name": "@hooklab/use-abs",
   "version": "0.0.0",
   "private": true,
   "description": "A React hook for absolute value calculations",

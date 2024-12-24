@@ -1,5 +1,5 @@
 {
-  "extends": "@reactuse/typescript-config/react-library.json",
+  "extends": "@hooklab/typescript-config/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
     "plugins": [
@@ -8,7 +8,7 @@
       }
     ],
     "paths": {
-      "@reactuse/design-system/*": ["./*"]
+      "@hooklab/design-system/*": ["./*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

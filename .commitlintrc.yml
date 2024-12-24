@@ -1,0 +1,2 @@
+extends:
+  - '@hooklab/commitlint-config'
