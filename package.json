@@ -2,7 +2,7 @@
   "name": "@hooklab/root",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.2",
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
@@ -19,30 +19,32 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=!@hooklab/docs && changeset publish"
   },
-  "prettier": "@hooklab/prettier-config",
+  "prettier": "@hooklab/prettier",
   "dependencies": {
-    "@hooklab/commitlint-config": "workspace:*",
-    "@hooklab/lintstaged-config": "workspace:*",
-    "@hooklab/prettier-config": "workspace:*",
-    "@hooklab/typescript-config": "workspace:*",
-    "concurrently": "^9.1.0"
+    "@hooklab/commitlint": "workspace:*",
+    "@hooklab/lintstaged": "workspace:*",
+    "@hooklab/prettier": "workspace:*",
+    "concurrently": "^9.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.11.2",
+    "@antfu/eslint-config": "^3.12.1",
     "@babel/eslint-parser": "^7.25.9",
-    "@changesets/cli": "^2.27.10",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
     "@types/node": "22.7.8",
-    "cspell": "^8.16.1",
-    "eslint": "^9.16.0",
-    "globals": "^15.13.0",
+    "cspell": "^8.17.1",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
-    "jiti": "^2.4.1",
+    "jiti": "^2.4.2",
     "npm-run-all": "^4.1.5",
     "simple-git-hooks": "^2.11.1",
     "syncpack": "^13.0.0",
     "tsup": "^8.3.5",
     "turbo": "^2.3.3",
-    "typescript-eslint": "^8.18.0",
+    "typescript-eslint": "^8.19.0",
     "vitest": "^2.1.8"
   }
 }
