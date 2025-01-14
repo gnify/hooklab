@@ -1,187 +1,129 @@
-- name: "priority: critical"
-  color: "b60205"
-  description: "Requires immediate attention"
+## more info https://github.com/crazy-max/ghaction-github-labeler
 
-- name: "priority: high"
-  color: "d93f0b"
-  description: "Requires attention in the near term"
+- name: "I: BUILD"
+  color: "0366d6"
+  description: "Tasks related to the build system"
 
-- name: "priority: medium"
-  color: "fbca04"
-  description: "Requires attention in the foreseeable future"
+- name: "I: CI"
+  color: "0366d6"
+  description: "Tasks related to continuous integration"
+  
+- name: "I: TOOLING"
+  color: "0366d6"
+  description: "Tasks related to development tools"
 
-- name: "priority: low"
-  color: "0e8a16"
-  description: "Can be deferred"
-
-- name: "type: bug"
-  color: "d73a4a"
-  description: "Something isn't working as expected"
-
-- name: "type: feature"
-  color: "a2eeef"
-  description: "New feature or request"
-
-- name: "type: enhancement"
-  color: "7057ff"
-  description: "Improvement to existing functionality"
-
-- name: "type: docs"
-  color: "0075ca"
-  description: "Documentation improvement"
-
-- name: "type: performance"
-  color: "2cbe4e"
-  description: "Performance optimization"
-
-- name: "type: refactor"
-  color: "1d76db"
-  description: "Code refactoring without changing functionality"
-
-- name: "type: test"
-  color: "9e6a03"
-  description: "Adding or improving tests"
-
-- name: "status: help wanted"
-  color: "008672"
-  description: "Community assistance needed"
-
-- name: "status: in progress"
-  color: "fed330"
-  description: "Work in progress"
-
-- name: "status: blocked"
-  color: "e11d21"
-  description: "Blocked by another issue"
-
-- name: "status: review needed"
-  color: "fbca04"
-  description: "Ready for code review"
-
-- name: "status: ready"
-  color: "0e8a16"
-  description: "Ready for merge"
-
-- name: "size: XS"
+- name: "S: XS"
   color: "009900"
-  description: "Extra small changes (<10 lines)"
+  description: "Very small changes (<10 lines)"
 
-- name: "size: S"
+- name: "S: S"
   color: "77bb00"
   description: "Small changes (10-30 lines)"
 
-- name: "size: M"
+- name: "S: M"
   color: "eebb00"
   description: "Medium changes (30-100 lines)"
 
-- name: "size: L"
+- name: "S: L"
   color: "ee9900"
   description: "Large changes (100-500 lines)"
 
-- name: "size: XL"
+- name: "S: XL"
   color: "ee5500"
-  description: "Extra large changes (500+ lines)"
+  description: "Very large changes (500+ lines)"
 
-- name: "semver: major"
+- name: "P: Critical"
   color: "b60205"
-  description: "Major version change"
+  description: "Requires immediate attention"
 
-- name: "semver: minor"
+- name: "P: High"
+  color: "d93f0b"
+  description: "Needs attention sono"
+
+- name: "P: Medium"
   color: "fbca04"
-  description: "Minor version change"
+  description: "Requires attention in medium term"
 
-- name: "semver: patch"
+- name: "P: Low"
   color: "0e8a16"
-  description: "Patch version change"
+  description: "Can be deferr3ed"
 
-- name: "good first issue"
+- name: "T: Bug"
+  color: "d73a4a"
+  description: "Something isn't working as expected"
+
+- name: "T: Feature"
+  color: "a2eeef"
+  description: "New functionality or feature request"
+
+- name: "T: Enhancement"
   color: "7057ff"
-  description: "Good for newcomers"
+  description: "Improvement to existing functionality"
 
-- name: "breaking change"
+- name: "T: Docs"
+  color: "0075ca"
+  description: "Documentation improvement"
+
+- name: "T: Performance"
+  color: "2cbe4e"
+  description: "Performance optimization"
+
+- name: "T: Refactor"
+  color: "1d76db"
+  description: "Code refactoring without changing functionality"
+
+- name: "T: TEST"
+  color: "9e6a03"
+  description: "Adding or improving tests"
+
+- name: "In progress"
+  color: "fed330"
+  description: "Task is in progress"
+
+- name: "Blocked"
+  color: "e11d21"
+  description: "Task is blocked by another task"
+
+- name: "Review needed"
+  color: "fbca04"
+  description: "Task is ready for code review"
+
+- name: "Ready"
+  color: "0e8a16"
+  description: "Task is ready to merge"
+
+- name: "C: Good first issue"
+  color: "7057ff"
+  description: "Beginner-friendly task"
+
+- name: "C: Feedback Needed"
+  color: "dd4e4c"
+  description: "Requires feedback from the community"
+
+- name: "M: Breaking Change"
   color: "b60205"
-  description: "Introduces breaking changes to the API"
+  description: "Introduce breaking changes to the API"
 
-- name: "dependencies"
+- name: "M: Dependencies"
   color: "0366d6"
-  description: "Dependency updates"
+  description: "Dependencies update"
 
-- name: "duplicate"
+- name: "M: Duplicate"
   color: "cfd3d7"
   description: "Duplicate of an existing issue"
 
-- name: "wontfix"
+- name: "M: Wontfix"
   color: "ffffff"
-  description: "This will not be addressed"
+  description: "Task will not be fixed"
 
-- name: "needs discussion"
+- name: "M: Needs Discussion"
   color: "d4c5f9"
   description: "Requires further discussion"
 
-- name: "needs research"
+- name: "M: Needs Research"
   color: "fef2c0"
-  description: "Requires additional investigation"
+  description: "Requires additional investigaion"
 
-- name: "invalid"
+- name: "M: Invalid"
   color: "e4e669"
-  description: "This doesn't seem right"
-
-- name: "release: next"
-  color: "0366d6"
-  description: "Slated for the next release"
-
-- name: "release: beta"
-  color: "0366d6"
-  description: "Beta release"
-
-- name: "release: stable"
-  color: "0366d6"
-  description: "Stable release"
-
-- name: "infra: build"
-  color: "006b75"
-  description: "Build system"
-
-- name: "infra: ci"
-  color: "006b75"
-  description: "Continuous integration"
-
-- name: "infra: deployment"
-  color: "006b75"
-  description: "Deployment process"
-
-- name: "infra: tooling"
-  color: "006b75"
-  description: "Development tools"
-
-- name: "example: needed"
-  color: "0075ca"
-  description: "Usage example required"
-
-- name: "example: outdated"
-  color: "0075ca"
-  description: "Outdated example"
-
-- name: "repro: needed"
-  color: "c2e0c6"
-  description: "Reproduction steps required"
-
-- name: "repro: provided"
-  color: "c2e0c6"
-  description: "Reproduction steps provided"
-
-- name: "repro: confirmed"
-  color: "c2e0c6"
-  description: "Issue confirmed"
-
-- name: "sprint: current"
-  color: "bfd4f2"
-  description: "Current sprint task"
-
-- name: "sprint: next"
-  color: "bfd4f2"
-  description: "Next sprint task"
-
-- name: "community: feedback needed"
-  color: "dd4e4c"
-  description: "Community feedback required"
+  description: "Invalid"
