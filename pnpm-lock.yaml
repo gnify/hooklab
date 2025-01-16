@@ -166,6 +166,12 @@ importers:
       '@hooklab/design-system':
         specifier: workspace:*
         version: link:../../packages/design-system
+      '@hooklab/nightly':
+        specifier: workspace:*
+        version: link:../../packages/@hooklab-next
+      '@hooklab/std':
+        specifier: workspace:*
+        version: link:../../packages/@hooklab
       '@hooklab/tailwind':
         specifier: workspace:*
         version: link:../../packages/tailwind
@@ -184,9 +190,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
-      hooklab:
-        specifier: workspace:*
-        version: link:../../packages/@hooklab-nightly
       postcss:
         specifier: ^8.4.49
         version: 8.4.49
@@ -225,7 +228,7 @@ importers:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.10.5)(happy-dom@16.2.9)
 
-  packages/@hooklab-nightly:
+  packages/@hooklab-next:
     dependencies:
       react:
         specifier: ^19.0.0
