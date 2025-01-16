@@ -14,18 +14,6 @@
     "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
     "index.ts": "$(capture).*, $(capture)_*"
   },
-  "files.exclude": {
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "*[!test]**/node_modules": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "search.exclude": {
-    "**/dist": true,
-    "**/node_modules": true
-  },
   "todo-tree.filtering.excludeGlobs": [
     "**/node_modules",
     "**/dist",
@@ -40,13 +28,8 @@
     "[ ]",
     "[x]"
   ],
-  "typescript.surveys.enabled": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
-
+  
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
@@ -70,7 +53,6 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "vue",
     "html",
     "markdown",
     "json",
@@ -79,13 +61,9 @@
     "yaml",
     "toml",
     "xml",
-    "gql",
-    "graphql",
-    "astro",
     "css",
     "less",
     "scss",
-    "pcss",
     "postcss"
   ]
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useToast } from '@hooklab/design-system/hooks/use-toast';
+import type { JSX } from 'react';
 import {
   Toast,
   ToastClose,
@@ -9,13 +9,14 @@ import {
   ToastTitle,
   ToastViewport,
 } from '@hooklab/design-system/components/ui/toast';
+import { useToast } from '@hooklab/design-system/hooks/use-toast';
 
-export function Toaster() {
+function Toaster(): JSX.Element {
   const { toasts } = useToast();
 
   return (
     <ToastProvider>
-      {toasts.map(function ({ id, title, description, action, ...props }) {
+      {toasts.map(({ id, title, description, action, ...props }) => {
         return (
           <Toast key={id} {...props}>
             <div className="grid gap-1">
@@ -33,3 +34,5 @@ export function Toaster() {
     </ToastProvider>
   );
 }
+
+export { Toaster };

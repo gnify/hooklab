@@ -1,16 +1,17 @@
-import { source } from '@/shared/lib/source';
+import type { JSX } from 'react';
+import { source } from '@/source';
+import defaultMdxComponents from 'fumadocs-ui/mdx';
 import {
-  DocsPage,
   DocsBody,
   DocsDescription,
+  DocsPage,
   DocsTitle,
 } from 'fumadocs-ui/page';
 import { notFound } from 'next/navigation';
-import defaultMdxComponents from 'fumadocs-ui/mdx';
 
-export default async function Page(props: {
+async function Page(props: {
   params: Promise<{ slug?: string[] }>;
-}) {
+}): Promise<JSX.Element> {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();
@@ -28,13 +29,20 @@ export default async function Page(props: {
   );
 }
 
-export async function generateStaticParams() {
+export default Page;
+
+async function generateStaticParams(): Promise<
+  (Record<'slug', string[]> & Record<'lang', string>)[]
+> {
   return source.generateParams();
 }
 
-export async function generateMetadata(props: {
+async function generateMetadata(props: {
   params: Promise<{ slug?: string[] }>;
-}) {
+}): Promise<{
+  title: string;
+  description: string | undefined;
+}> {
   const params = await props.params;
   const page = source.getPage(params.slug);
   if (!page) notFound();
@@ -44,3 +52,5 @@ export async function generateMetadata(props: {
     description: page.data.description,
   };
 }
+
+export { generateMetadata, generateStaticParams };

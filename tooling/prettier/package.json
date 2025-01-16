@@ -1,0 +1,10 @@
+{
+  "name": "@hooklab/prettier",
+  "private": true,
+  "type": "module",
+  "description": "Prettier config for hooklab",
+  "peerDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.5.3"
+  }
+}

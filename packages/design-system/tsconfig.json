@@ -1,5 +1,5 @@
 {
-  "extends": "@hooklab/typescript-config/react-library.json",
+  "extends": "@hooklab/tsconfig/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
     "plugins": [

@@ -1,0 +1,14 @@
+"T: Docs":
+  - any:
+    - changed-files:
+      - any-glob-to-any-file: 'docs/**'
+
+"T: Test":
+  - any:
+    - changed-files:
+      - any-glob-to-any-file: '**/*.test.*'
+
+"M: Dependencies":
+  - any:
+    - changed-files:
+      - any-glob-to-any-file: '**/package.json'

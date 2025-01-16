@@ -1,0 +1,7 @@
+{
+  "extends": "@hooklab/tsconfig/react-library.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}

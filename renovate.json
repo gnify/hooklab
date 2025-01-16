@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":preserveSemverRanges",
+    "group:allNonMajor"
+  ],
+  "baseBranches": ["master"],
+  "ignoreDeps": [
+    "@types/react",
+    "@types/react-dom",
+    "@types/node",
+    "typescript",
+    "lucide-react"
+  ]
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import type { JSX } from 'react';
 import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '../components/ui/button';
@@ -10,13 +11,13 @@ import {
   DropdownMenuTrigger,
 } from '../components/ui/dropdown-menu';
 
-const themes = [
+const COLOR_THEMES = [
   { label: 'Light', value: 'light' },
   { label: 'Dark', value: 'dark' },
   { label: 'System', value: 'system' },
 ];
 
-export const ModeToggle = () => {
+function ModeToggle(): JSX.Element {
   const { setTheme } = useTheme();
 
   return (
@@ -33,7 +34,7 @@ export const ModeToggle = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        {themes.map(({ label, value }) => (
+        {COLOR_THEMES.map(({ label, value }) => (
           <DropdownMenuItem key={value} onClick={() => setTheme(value)}>
             {label}
           </DropdownMenuItem>
@@ -41,4 +42,6 @@ export const ModeToggle = () => {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-};
+}
+
+export { ModeToggle };

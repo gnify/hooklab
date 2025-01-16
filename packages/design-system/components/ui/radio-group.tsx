@@ -1,15 +1,18 @@
 'use client';
 
-import * as React from 'react';
+import type { ComponentPropsWithRef, JSX } from 'react';
+import { cn } from '@hooklab/design-system/lib/utils';
 import { CheckIcon } from '@radix-ui/react-icons';
 import * as RadioGroupPrimitive from '@radix-ui/react-radio-group';
 
-import { cn } from '@hooklab/design-system/lib/utils';
+interface RadioGroupProps
+  extends ComponentPropsWithRef<typeof RadioGroupPrimitive.Root> {}
 
-const RadioGroup = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
->(({ className, ...props }, ref) => {
+function RadioGroup({
+  className,
+  ref,
+  ...props
+}: RadioGroupProps): JSX.Element {
   return (
     <RadioGroupPrimitive.Root
       className={cn('grid gap-2', className)}
@@ -17,13 +20,18 @@ const RadioGroup = React.forwardRef<
       ref={ref}
     />
   );
-});
+}
+
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 
-const RadioGroupItem = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
->(({ className, ...props }, ref) => {
+interface RadioGroupItemProps
+  extends ComponentPropsWithRef<typeof RadioGroupPrimitive.Item> {}
+
+function RadioGroupItem({
+  className,
+  ref,
+  ...props
+}: RadioGroupItemProps): JSX.Element {
   return (
     <RadioGroupPrimitive.Item
       ref={ref}
@@ -38,7 +46,8 @@ const RadioGroupItem = React.forwardRef<
       </RadioGroupPrimitive.Indicator>
     </RadioGroupPrimitive.Item>
   );
-});
+}
+
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
 
 export { RadioGroup, RadioGroupItem };

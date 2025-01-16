@@ -1,0 +1,11 @@
+{
+  "name": "@hooklab/commitlint",
+  "private": true,
+  "type": "module",
+  "description": "Commitlint config for hooklab",
+  "peerDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/types": "^19.5.0"
+  }
+}

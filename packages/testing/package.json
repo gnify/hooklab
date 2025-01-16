@@ -1,0 +1,15 @@
+{
+  "name": "@hooklab/testing",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "devDependencies": {
+    "@hooklab/tsconfig": "workspace:*",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^2.1.8"
+  }
+}

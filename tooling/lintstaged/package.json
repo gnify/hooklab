@@ -1,0 +1,9 @@
+{
+  "name": "@hooklab/lintstaged",
+  "private": true,
+  "type": "module",
+  "description": "Lintstaged config for hooklab",
+  "peerDependencies": {
+    "lint-staged": "^15.2.10"
+  }
+}

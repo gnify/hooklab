@@ -1,0 +1,5 @@
+{
+  "name": "@hooklab/tsconfig",
+  "private":"true",
+  "description": "Typescript config for hooklab"
+}

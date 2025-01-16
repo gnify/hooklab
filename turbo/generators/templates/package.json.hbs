@@ -1,0 +1,12 @@
+{
+  "name": "@hooklab/{{ name }}",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "git clean -xdf .cache dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "devDependencies": {
+    "@hooklab/tsconfig": "workspace:*",
+  }
+}

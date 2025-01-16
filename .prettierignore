@@ -1,9 +1,43 @@
-CHANGELOG.md
+# Dependencies
+node_modules
+package-lock.json
 pnpm-lock.yaml
-.changeset/*.md
-.github/**/*.md
+yarn.lock
+bun.Lockb
 
-apps/docs/shaders/*
+# Build and output directories
+dist
+output
+.next
+.vitepress/cache
 
-**/test/out/**/*
-**/test/fixtures/*.output.*
+# Cache and temporary files
+.cache
+.temp
+.tm
+temp
+tmp
+.turbo
+.yarn
+
+# IDE and editor files
+.idea
+
+# Test and coverage
+coverage
+__snapshots__
+
+# Generated Types
+auto-import?.d.ts
+auto-imports.d.ts
+
+# Version control and docs
+.changeset
+CHANGELOG*.md
+LICENSE*
+
+# Minified files
+*.min.*
+
+# Vercel
+.vercel
