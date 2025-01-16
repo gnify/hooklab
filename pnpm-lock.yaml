@@ -186,7 +186,7 @@ importers:
         version: 10.4.20(postcss@8.4.49)
       hooklab:
         specifier: workspace:*
-        version: link:../../packages/hooklab
+        version: link:../../packages/@hooklab-nightly
       postcss:
         specifier: ^8.4.49
         version: 8.4.49
@@ -196,6 +196,62 @@ importers:
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
+
+  packages/@hooklab:
+    dependencies:
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@hooklab/design-system':
+        specifier: workspace:*
+        version: link:../design-system
+      '@hooklab/testing':
+        specifier: workspace:*
+        version: link:../testing
+      '@hooklab/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/react':
+        specifier: ^19.0.4
+        version: 19.0.4
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+      vitest:
+        specifier: ^2.1.8
+        version: 2.1.8(@types/node@22.10.5)(happy-dom@16.2.9)
+
+  packages/@hooklab-nightly:
+    dependencies:
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@hooklab/design-system':
+        specifier: workspace:*
+        version: link:../design-system
+      '@hooklab/testing':
+        specifier: workspace:*
+        version: link:../testing
+      '@hooklab/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/react':
+        specifier: ^19.0.4
+        version: 19.0.4
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+      vitest:
+        specifier: ^2.1.8
+        version: 2.1.8(@types/node@22.10.5)(happy-dom@16.2.9)
 
   packages/design-system:
     dependencies:
@@ -371,34 +427,6 @@ importers:
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
-
-  packages/hooklab:
-    dependencies:
-      react:
-        specifier: ^19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
-    devDependencies:
-      '@hooklab/design-system':
-        specifier: workspace:*
-        version: link:../design-system
-      '@hooklab/testing':
-        specifier: workspace:*
-        version: link:../testing
-      '@hooklab/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@types/react':
-        specifier: ^19.0.4
-        version: 19.0.4
-      typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
-      vitest:
-        specifier: ^2.1.8
-        version: 2.1.8(@types/node@22.10.5)(happy-dom@16.2.9)
 
   packages/tailwind:
     dependencies:
