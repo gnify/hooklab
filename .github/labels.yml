@@ -1,129 +1,129 @@
-## more info https://github.com/crazy-max/ghaction-github-labeler
+# # more info https://github.com/crazy-max/ghaction-github-labeler
 
-- name: "I: BUILD"
-  color: "0366d6"
-  description: "Tasks related to the build system"
+- name: 'I: BUILD'
+  color: 0366d6
+  description: Tasks related to the build system
 
-- name: "I: CI"
-  color: "0366d6"
-  description: "Tasks related to continuous integration"
-  
-- name: "I: TOOLING"
-  color: "0366d6"
-  description: "Tasks related to development tools"
+- name: 'I: CI'
+  color: 0366d6
+  description: Tasks related to continuous integration
 
-- name: "S: XS"
-  color: "009900"
-  description: "Very small changes (<10 lines)"
+- name: 'I: TOOLING'
+  color: 0366d6
+  description: Tasks related to development tools
 
-- name: "S: S"
-  color: "77bb00"
-  description: "Small changes (10-30 lines)"
+- name: 'S: XS'
+  color: '009900'
+  description: Very small changes (<10 lines)
 
-- name: "S: M"
-  color: "eebb00"
-  description: "Medium changes (30-100 lines)"
+- name: 'S: S'
+  color: 77bb00
+  description: Small changes (10-30 lines)
 
-- name: "S: L"
-  color: "ee9900"
-  description: "Large changes (100-500 lines)"
+- name: 'S: M'
+  color: eebb00
+  description: Medium changes (30-100 lines)
 
-- name: "S: XL"
-  color: "ee5500"
-  description: "Very large changes (500+ lines)"
+- name: 'S: L'
+  color: ee9900
+  description: Large changes (100-500 lines)
 
-- name: "P: Critical"
-  color: "b60205"
-  description: "Requires immediate attention"
+- name: 'S: XL'
+  color: ee5500
+  description: 'Very large changes (500+ lines)'
 
-- name: "P: High"
-  color: "d93f0b"
-  description: "Needs attention sono"
+- name: 'P: Critical'
+  color: b60205
+  description: Requires immediate attention
 
-- name: "P: Medium"
-  color: "fbca04"
-  description: "Requires attention in medium term"
+- name: 'P: High'
+  color: d93f0b
+  description: Needs attention sono
 
-- name: "P: Low"
-  color: "0e8a16"
-  description: "Can be deferr3ed"
+- name: 'P: Medium'
+  color: fbca04
+  description: Requires attention in medium term
 
-- name: "T: Bug"
-  color: "d73a4a"
+- name: 'P: Low'
+  color: 0e8a16
+  description: Can be deferr3ed
+
+- name: 'T: Bug'
+  color: d73a4a
   description: "Something isn't working as expected"
 
-- name: "T: Feature"
-  color: "a2eeef"
-  description: "New functionality or feature request"
+- name: 'T: Feature'
+  color: a2eeef
+  description: New functionality or feature request
 
-- name: "T: Enhancement"
-  color: "7057ff"
-  description: "Improvement to existing functionality"
+- name: 'T: Enhancement'
+  color: 7057ff
+  description: Improvement to existing functionality
 
-- name: "T: Docs"
-  color: "0075ca"
-  description: "Documentation improvement"
+- name: 'T: Docs'
+  color: 0075ca
+  description: Documentation improvement
 
-- name: "T: Performance"
-  color: "2cbe4e"
-  description: "Performance optimization"
+- name: 'T: Performance'
+  color: 2cbe4e
+  description: Performance optimization
 
-- name: "T: Refactor"
-  color: "1d76db"
-  description: "Code refactoring without changing functionality"
+- name: 'T: Refactor'
+  color: 1d76db
+  description: Code refactoring without changing functionality
 
-- name: "T: TEST"
-  color: "9e6a03"
-  description: "Adding or improving tests"
+- name: 'T: Test'
+  color: 9e6a03
+  description: Adding or improving tests
 
-- name: "In progress"
-  color: "fed330"
-  description: "Task is in progress"
+- name: In progress
+  color: fed330
+  description: Task is in progress
 
-- name: "Blocked"
-  color: "e11d21"
-  description: "Task is blocked by another task"
+- name: Blocked
+  color: e11d21
+  description: Task is blocked by another task
 
-- name: "Review needed"
-  color: "fbca04"
-  description: "Task is ready for code review"
+- name: Review needed
+  color: fbca04
+  description: Task is ready for code review
 
-- name: "Ready"
-  color: "0e8a16"
-  description: "Task is ready to merge"
+- name: Ready
+  color: 0e8a16
+  description: Task is ready to merge
 
-- name: "C: Good first issue"
-  color: "7057ff"
-  description: "Beginner-friendly task"
+- name: 'C: Good first issue'
+  color: 7057ff
+  description: Beginner-friendly task
 
-- name: "C: Feedback Needed"
-  color: "dd4e4c"
-  description: "Requires feedback from the community"
+- name: 'C: Feedback Needed'
+  color: dd4e4c
+  description: Requires feedback from the community
 
-- name: "M: Breaking Change"
-  color: "b60205"
-  description: "Introduce breaking changes to the API"
+- name: 'M: Breaking Change'
+  color: b60205
+  description: Introduce breaking changes to the API
 
-- name: "M: Dependencies"
-  color: "0366d6"
-  description: "Dependencies update"
+- name: 'M: Dependencies'
+  color: 0366d6
+  description: Dependencies update
 
-- name: "M: Duplicate"
-  color: "cfd3d7"
-  description: "Duplicate of an existing issue"
+- name: 'M: Duplicate'
+  color: cfd3d7
+  description: Duplicate of an existing issue
 
-- name: "M: Wontfix"
-  color: "ffffff"
-  description: "Task will not be fixed"
+- name: 'M: Wontfix'
+  color: ffffff
+  description: Task will not be fixed
 
-- name: "M: Needs Discussion"
-  color: "d4c5f9"
-  description: "Requires further discussion"
+- name: 'M: Needs Discussion'
+  color: d4c5f9
+  description: Requires further discussion
 
-- name: "M: Needs Research"
-  color: "fef2c0"
-  description: "Requires additional investigaion"
+- name: 'M: Needs Research'
+  color: fef2c0
+  description: Requires additional investigaion
 
-- name: "M: Invalid"
-  color: "e4e669"
-  description: "Invalid"
+- name: 'M: Invalid'
+  color: e4e669
+  description: Invalid
