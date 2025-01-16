@@ -1,6 +1,6 @@
 # # more info https://github.com/crazy-max/ghaction-github-labeler
 
-- name: 'I: BUILD'
+- name: 'I: Build'
   color: 0366d6
   description: Tasks related to the build system
 
@@ -8,7 +8,7 @@
   color: 0366d6
   description: Tasks related to continuous integration
 
-- name: 'I: TOOLING'
+- name: 'I: Tooling'
   color: 0366d6
   description: Tasks related to development tools
 
