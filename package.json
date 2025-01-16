@@ -1,9 +1,10 @@
 {
   "name": "@hooklab/root",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@9.15.3",
   "license": "./LICENSE",
-  "type": "module",
   "scripts": {
     "build": "turbo run build",
     "changeset": "changeset",
@@ -19,7 +20,6 @@
     "typecheck": "turbo run typecheck",
     "version-packages": "changeset version"
   },
-  "prettier": "@hooklab/prettier",
   "dependencies": {
     "@hooklab/commitlint": "workspace:*",
     "@hooklab/eslint": "workspace:*",
@@ -64,6 +64,5 @@
     "turbo": "^2.3.3",
     "typescript-eslint": "^8.19.1",
     "vitest": "^2.1.8"
-  },
-  "packageManager": "pnpm@9.15.3"
+  }
 }
